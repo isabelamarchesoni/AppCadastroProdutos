@@ -170,14 +170,3 @@ service cloud.firestore {
 7. Clique em **Run ▶️** (ou `Shift + F10`)
 
 ---
-
-## ⚙️ Configuração do Ambiente
-
-Caso encontre problemas com o Gradle, configure o `JAVA_HOME` apontando para o JDK interno do Android Studio:
-
-```powershell
-$env:JAVA_HOME = "C:\Program Files\Android\Android Studio\jbr"
-$env:PATH = "$env:JAVA_HOME\bin;$env:PATH"
-```
-
-E configure o **Gradle user home** em `Settings → Build Tools → Gradle` para um caminho sem caracteres especiais, como `C:\Gradle`.
