@@ -36,8 +36,8 @@ Exibe e gerencia os produtos do usuário salvos no Firestore.
     <th align="center">Com Produto</th>
   </tr>
   <tr>
-    <td align="center"><img src="screenshots/WelcomeLight.jpeg" width="180"/></td>
     <td align="center"><img src="screenshots/TelaLoginLight.jpeg" width="180"/></td>
+    <td align="center"><img src="screenshots/WelcomeLight.jpeg" width="180"/></td>
     <td align="center"><img src="screenshots/AddProdutoLightSemProduto.jpeg" width="180"/></td>
     <td align="center"><img src="screenshots/AddProdutoLightComProduto.jpeg" width="180"/></td>
   </tr>
