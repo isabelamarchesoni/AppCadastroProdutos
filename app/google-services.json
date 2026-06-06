@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "718564821884",
+    "project_id": "appprodutos-5cb72",
+    "storage_bucket": "appprodutos-5cb72.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:718564821884:android:3838ce25484379b5d172f9",
+        "android_client_info": {
+          "package_name": "br.edu.fatecpg.firebaseprodutos"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "718564821884-5d6t5p2qbi4ma2fsp4sghlp7jrfodjvo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "br.edu.fatecpg.firebaseprodutos",
+            "certificate_hash": "3f8e643b7dac2220dde39a1a1c47ba7570d5a727"
+          }
+        },
+        {
+          "client_id": "718564821884-rpt1u8p9nr11g51fkhb0k9ilnmikcd0m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD2V6UVSNFT4J0Xl-Em6vlh3YqrbA0Bhgo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "718564821884-rpt1u8p9nr11g51fkhb0k9ilnmikcd0m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
