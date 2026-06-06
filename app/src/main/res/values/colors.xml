@@ -7,4 +7,5 @@
     <color name="text_primary">#5C5C5C</color>
     <color name="text_secondary">#8A8A8A</color>
     <color name="card">#FFFFFF</color>
+    <color name="card_border">#00000000</color>
 </resources>

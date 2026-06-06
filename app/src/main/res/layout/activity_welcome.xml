@@ -44,14 +44,16 @@
         app:cornerRadius="22dp"
         android:backgroundTint="@android:color/transparent"/>
 
-    <androidx.cardview.widget.CardView
+    <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginHorizontal="24dp"
         app:cardCornerRadius="32dp"
         app:cardElevation="24dp"
-        app:cardBackgroundColor="@color/card">
+        app:cardBackgroundColor="@color/card"
+        app:strokeColor="@color/card_border"
+        app:strokeWidth="1dp">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -123,5 +125,5 @@
                 app:layout_constraintEnd_toEndOf="parent"/>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
-    </androidx.cardview.widget.CardView>
+    </com.google.android.material.card.MaterialCardView>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
