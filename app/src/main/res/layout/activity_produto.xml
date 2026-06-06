@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient"
+    tools:context=".ProdutoActivity">
+
+  <ImageView
+      android:layout_width="200dp"
+      android:layout_height="200dp"
+      android:src="@drawable/blob_top"
+      android:alpha="0.15"
+      android:layout_gravity="top|end"
+      android:translationX="50dp"
+      android:translationY="-50dp"/>
+
+  <ImageView
+      android:layout_width="180dp"
+      android:layout_height="180dp"
+      android:src="@drawable/blob_bottom"
+      android:alpha="0.12"
+      android:layout_gravity="bottom|start"
+      android:translationX="-40dp"
+      android:translationY="40dp"/>
+
+  <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:gravity="center_vertical"
+          android:layout_marginBottom="28dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            app:cardCornerRadius="22dp"
+            app:cardElevation="6dp"
+            app:cardBackgroundColor="@color/pink"
+            android:layout_marginEnd="12dp">
+
+          <ImageView
+              android:layout_width="22dp"
+              android:layout_height="22dp"
+              android:layout_gravity="center"
+              android:src="@drawable/ic_shopping_cart"
+              app:tint="@color/white"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:text="Adicionar Produto"
+            android:textColor="@color/text_primary"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+      </LinearLayout>
+
+      <androidx.cardview.widget.CardView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          app:cardCornerRadius="28dp"
+          app:cardElevation="20dp"
+          app:cardBackgroundColor="@color/card"
+          android:layout_marginBottom="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+          <com.google.android.material.textfield.TextInputLayout
+              android:id="@+id/etNome"
+              style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:hint="Nome do produto"
+              app:boxStrokeColor="@color/pink"
+              app:hintTextColor="@color/pink"
+              android:layout_marginBottom="16dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+          </com.google.android.material.textfield.TextInputLayout>
+
+          <com.google.android.material.textfield.TextInputLayout
+              android:id="@+id/etPreco"
+              style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:hint="Preço (R$)"
+              app:boxStrokeColor="@color/pink"
+              app:hintTextColor="@color/pink"
+              android:layout_marginBottom="16dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"/>
+
+          </com.google.android.material.textfield.TextInputLayout>
+
+          <com.google.android.material.textfield.TextInputLayout
+              android:id="@+id/etDescricao"
+              style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:hint="Descrição"
+              app:boxStrokeColor="@color/pink"
+              app:hintTextColor="@color/pink">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minLines="3"
+                android:gravity="top"
+                android:inputType="textMultiLine"/>
+
+          </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+      </androidx.cardview.widget.CardView>
+
+      <com.google.android.material.button.MaterialButton
+          android:id="@+id/btnSalvar"
+          android:layout_width="match_parent"
+          android:layout_height="56dp"
+          android:text="Salvar Produto"
+          android:textSize="16sp"
+          android:textStyle="bold"
+          android:textColor="@color/white"
+          android:backgroundTint="@color/pink"
+          android:insetTop="0dp"
+          android:insetBottom="0dp"
+          app:cornerRadius="28dp"
+          app:elevation="8dp"
+          android:layout_marginBottom="20dp"/>
+
+      <androidx.cardview.widget.CardView
+          android:id="@+id/cardProduto"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:visibility="gone"
+          app:cardCornerRadius="28dp"
+          app:cardElevation="20dp"
+          app:cardBackgroundColor="@color/card">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:gravity="center_vertical"
+              android:layout_marginBottom="12dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                app:cardCornerRadius="18dp"
+                app:cardElevation="4dp"
+                app:cardBackgroundColor="@color/pink"
+                android:layout_marginEnd="10dp">
+
+              <ImageView
+                  android:layout_width="18dp"
+                  android:layout_height="18dp"
+                  android:layout_gravity="center"
+                  android:src="@drawable/ic_shopping_cart"
+                  app:tint="@color/white"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/tvNomeProduto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/text_primary"/>
+
+          </LinearLayout>
+
+          <TextView
+              android:id="@+id/tvPrecoProduto"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textSize="16sp"
+              android:textStyle="bold"
+              android:textColor="@color/pink"
+              android:layout_marginBottom="6dp"/>
+
+          <TextView
+              android:id="@+id/tvDescricaoProduto"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textSize="14sp"
+              android:textColor="@color/text_secondary"/>
+
+        </LinearLayout>
+      </androidx.cardview.widget.CardView>
+    </LinearLayout>
+  </ScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
